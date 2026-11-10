@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="NutricionalAppFX2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/NutricionalAppFX.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/NutricionalAppFX.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/controlador/FXMLAutenticacionController.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/modelo/database.properties</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/modelo/ConexionBD.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/controlador/FXMLPrincipalController.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/recurso/images.jpg</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/modelo/dao/AutenticacionDAO.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/recurso/inicioImagen.png</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/utilidad/Utilidades.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/AutenticacionDM.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/pojo/Colaborador.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/contrato/IAutenticacionRepository.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/pojo/ColaboradorEstatus.java</file>
+        </group>
+    </open-files>
+</project-private>

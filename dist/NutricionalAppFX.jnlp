@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NutricionalAppFX.jnlp">
+  <information>
+    <title>NutricionalAppFX</title>
+    <vendor>andre</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Dglass.win.uiScale=100% "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NutricionalAppFX.jar" size="2293329" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.20.jar" size="2385601" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="nutricionalappfx.NutricionalAppFX"  name="NutricionalAppFX" />
+  <update check="always"/>
+</jnlp>
