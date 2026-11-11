@@ -14,7 +14,7 @@
    <children>
       <Pane layoutX="100.0" layoutY="164.0" prefHeight="313.0" prefWidth="298.0">
          <children>
-            <ImageView fitHeight="462.0" fitWidth="433.0" layoutX="-80.0" layoutY="-76.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="462.0" fitWidth="496.0" layoutX="-80.0" layoutY="-76.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../recurso/inicioImagen.png" />
                </image>

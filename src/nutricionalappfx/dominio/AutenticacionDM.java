@@ -51,7 +51,7 @@ public class AutenticacionDM {
         respuesta.setActivo(false);
         if(estatus.getIdEstatus() == ESTATUS_COLABORADOR_SUSPENDIDO){
             respuesta.setMensaje("Lo sentimos tu cuenta ha sido suspendida indefinidamente."
-            + "\nContacta a un administrador al correo supportment@nutriapp.com");
+            + "\nContacta a un administrador al correo supportment@nutricionalapp.com");
         }else{
             respuesta.setMensaje("No. de personal y/o contraseñas incorrectos: "
             + "\nFavor de verificar la informacion");

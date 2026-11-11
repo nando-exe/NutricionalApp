@@ -126,6 +126,11 @@ public class Colaborador {
     public void setEstatus(String estatus) {
         this.estatus = estatus;
     }
+
+    @Override
+    public String toString() {
+        return nombre + " " + apellidoPaterno + " ";
+    }
     
     
 }

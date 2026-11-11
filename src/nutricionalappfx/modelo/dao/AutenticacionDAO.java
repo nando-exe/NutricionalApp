@@ -34,6 +34,7 @@ public class AutenticacionDAO implements  IAutenticacionRepository{
             return idColaborador;
            
         }catch(SQLException ex){
+            ex.printStackTrace();
             throw new RuntimeException("Error de conexion con el almacenamiento");
         }
     }
@@ -58,6 +59,7 @@ public class AutenticacionDAO implements  IAutenticacionRepository{
                 }
             }
         }catch (SQLException ex){
+            ex.printStackTrace();
             throw new RuntimeException("Error de conexion con el almacenamiento");
         }
     }
@@ -93,8 +95,8 @@ public class AutenticacionDAO implements  IAutenticacionRepository{
                 }
             }
         }catch (SQLException ex){
+            ex.printStackTrace();
             throw new RuntimeException("Error de conexion con el almacenamiento");
         }
     }
-    
 }
