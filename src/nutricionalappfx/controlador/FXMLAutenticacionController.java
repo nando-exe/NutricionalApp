@@ -9,10 +9,16 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import nutricionalappfx.dominio.AutenticacionDM;
+import nutricionalappfx.dominio.pojo.Autenticacion;
+import nutricionalappfx.dominio.pojo.Colaborador;
+import nutricionalappfx.modelo.dao.AutenticacionDAO;
+import nutricionalappfx.utilidad.Utilidades;
 
 /**
  * FXML Controller class
@@ -24,11 +30,15 @@ public class FXMLAutenticacionController implements Initializable {
     @FXML
     private Label lblUsuario;
     @FXML
-    private TextField tftUsuario;
-    @FXML
     private Label lblPassword;
     @FXML
     private PasswordField tftPassword;
+    @FXML
+    private TextField tftNoPersonal;
+    @FXML
+    private Label lblErrorContrasenia;
+    @FXML
+    private Label lblErrorNoPersonal;
 
     /**
      * Initializes the controller class.
@@ -40,10 +50,43 @@ public class FXMLAutenticacionController implements Initializable {
 
     @FXML
     private void handleBtnIngresar(ActionEvent event) {
+        String noPersonal = tftNoPersonal.getText();
+        String password = tftPassword.getText();
+        if(sonCamposVacios()){
+            validarCredenciales(noPersonal, password);
+        }
+    }
+    private void validarCredenciales(String noPersonal, String password){
+        AutenticacionDM autenticacionDM = 
+                new AutenticacionDM(new AutenticacionDAO());
+        try{
+            Autenticacion respuesta = 
+                autenticacionDM.verificarCredencialesColaborador(noPersonal, password);
+            if(respuesta.isCredencialesCorrectas() && respuesta.isActivo()){
+                Utilidades.mostrarAlertaSimple("Inicio de sesión exitoso",
+                        respuesta.getMensaje(), Alert.AlertType.INFORMATION);
+            }else{
+               Utilidades.mostrarAlertaSimple("Acceso denegado",
+                        respuesta.getMensaje(), Alert.AlertType.WARNING);
+            }
+        } catch (RuntimeException ex){
+            Utilidades.mostrarAlertaSimple("Error",
+                    ex.getMessage(), Alert.AlertType.ERROR);
+        }
         
     }
-    
-    private void irPantallaPrincipal(){
-        //TODO parent vista = new Parent
+    private boolean sonCamposVacios(){
+        boolean esValido = true;
+        lblErrorNoPersonal.setText("");
+        lblErrorContrasenia.setText("");
+        if(tftNoPersonal.getText().isEmpty()){
+            lblErrorNoPersonal.setText ("El numero de personal es obligatorio");
+            esValido = false;
+        }
+        if(tftPassword.getText().isEmpty()){
+            lblErrorContrasenia.setText("Debes ingresar la contraseña");
+            esValido = false;
+        }
+        return esValido;
     }
 }

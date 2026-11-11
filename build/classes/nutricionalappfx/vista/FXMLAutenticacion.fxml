@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutricionalappfx.controlador.FXMLAutenticacionController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutricionalappfx.controlador.FXMLAutenticacionController">
    <children>
       <Pane layoutX="100.0" layoutY="164.0" prefHeight="313.0" prefWidth="298.0">
          <children>
@@ -23,24 +23,24 @@
       </Pane>
       <Pane layoutX="440.0" layoutY="14.0" prefHeight="566.0" prefWidth="433.0">
          <children>
-            <Label layoutX="121.0" layoutY="72.0" prefHeight="35.0" prefWidth="364.0" text="¡Bienvenido a Nutricional App!">
+            <Label layoutX="110.0" layoutY="39.0" prefHeight="35.0" prefWidth="364.0" text="¡Bienvenido a Nutricional App!">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />
                </font></Label>
-            <Label layoutX="138.0" layoutY="107.0" prefHeight="17.0" prefWidth="200.0" text="Ingrese su usuario y contraseña" />
+            <Label layoutX="139.0" layoutY="84.0" prefHeight="17.0" prefWidth="200.0" text="Ingrese su usuario y contraseña" />
             <Label fx:id="lblUsuario" layoutX="29.0" layoutY="157.0" text="Usuario">
                <font>
                   <Font name="Consolas" size="20.0" />
                </font></Label>
-            <TextField fx:id="tftUsuario" layoutX="26.0" layoutY="186.0" prefHeight="67.0" prefWidth="384.0" promptText="Ej: abenitez123" />
+            <TextField fx:id="tftNoPersonal" layoutX="26.0" layoutY="186.0" prefHeight="67.0" prefWidth="384.0" promptText="Ej: abenitez123" />
             <Label fx:id="lblPassword" layoutX="25.0" layoutY="290.0" text="Contraseña">
                <font>
                   <Font size="17.0" />
                </font></Label>
             <PasswordField fx:id="tftPassword" layoutX="26.0" layoutY="316.0" prefHeight="67.0" prefWidth="384.0" promptText="*******" />
             <Button layoutX="26.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleBtnIngresar" prefHeight="82.0" prefWidth="384.0" style="-fx-background-color: #78FA9B;" text="Ingresar" />
-            <Label layoutX="29.0" layoutY="397.0" text="Error" textFill="RED" />
-            <Label layoutX="29.0" layoutY="263.0" text="Error" textFill="RED" />
+            <Label fx:id="lblErrorContrasenia" layoutX="29.0" layoutY="397.0" textFill="RED" />
+            <Label fx:id="lblErrorNoPersonal" layoutX="29.0" layoutY="263.0" textFill="RED" />
          </children>
       </Pane>
    </children>

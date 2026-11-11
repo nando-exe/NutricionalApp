@@ -7,6 +7,7 @@ package nutricionalappfx.utilidad;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import javafx.scene.control.Alert;
 
 /**
  *
@@ -33,11 +34,11 @@ public class Utilidades {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
+    public static void mostrarAlertaSimple(String titulo, String contenido, Alert.AlertType tipo){
+        Alert alerta = new Alert(tipo);
+        alerta.setTitle(titulo);
+        alerta.setHeaderText(null);
+        alerta.setContentText(contenido);
+        alerta.showAndWait();
+    }    
 }
