@@ -4,10 +4,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutricionalappfx.controlador.FXMLPrincipalController">
    <children>
-      <Label fx:id="lblNombre" layoutX="45.0" layoutY="43.0" prefHeight="17.0" prefWidth="161.0" text="Label">
+      <Label fx:id="lblNombre" layoutX="45.0" layoutY="43.0" prefHeight="28.0" prefWidth="676.0" text="Label">
          <font>
             <Font size="19.0" />
          </font>
