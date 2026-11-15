@@ -25,7 +25,7 @@
       <Button layoutX="556.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnEditar" prefHeight="35.0" prefWidth="77.0" text="Edicion" />
       <Button layoutX="641.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnBaja" prefHeight="35.0" prefWidth="77.0" text="Baja" />
       <Button layoutX="483.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnAlta" prefHeight="35.0" prefWidth="67.0" text="Alta" />
-      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="28.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="28.0" layoutY="17.0" onMouseClicked="#handleBtnRegresar" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../recurso/back.png" />
          </image>

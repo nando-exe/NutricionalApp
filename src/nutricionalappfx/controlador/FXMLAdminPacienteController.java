@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import nutricionalappfx.NutricionalAppFX;
@@ -77,6 +78,26 @@ public class FXMLAdminPacienteController implements Initializable {
         } catch (IOException ex) {
             ex.printStackTrace();
             Utilidades.mostrarAlertaSimple("ERROR", "No se pudo abrir el formulari", Alert.AlertType.ERROR);
+        }
+    }
+
+    @FXML
+    private void handleBtnRegresar(MouseEvent event) {
+        try{
+            FXMLLoader loader = new FXMLLoader(
+            NutricionalAppFX.class.getResource("vista/FXMLPrincipal.fxml"));
+            Parent vista = loader.load();
+            FXMLPrincipalController controlador = loader.getController();
+            controlador.inicializarInformacion(colaborador);
+            
+            Scene escena = new Scene(vista);
+            Stage escenario = (Stage) tfBuscar.getScene().getWindow();
+            escenario.setScene(escena);
+            escenario.setTitle("");
+            escenario.show();
+        }catch(IOException ex){
+            ex.printStackTrace();
+            Utilidades.mostrarAlertaSimple("Error", "No se pudo regresar a la pantalla principal", Alert.AlertType.ERROR);
         }
     }
     

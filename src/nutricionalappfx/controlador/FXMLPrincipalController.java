@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import nutricionalappfx.NutricionalAppFX;
 import nutricionalappfx.dominio.pojo.Colaborador;
@@ -86,7 +87,19 @@ public class FXMLPrincipalController implements Initializable {
     }
 
     @FXML
-    private void handleCerrarSesion(KeyEvent event) {
+    private void handleCerrarSesion(MouseEvent event) {
+        try{
+            Parent vista = FXMLLoader.load(
+            NutricionalAppFX.class.getResource("vista/FXMLAutenticacion.fxml"));
+            Scene escena = new Scene(vista);
+            Stage escenario = (Stage) lblNombre.getScene().getWindow();
+            escenario.setScene(escena);
+            escenario.setTitle("Inicio de sesion");
+            escenario.show();
+        }catch(IOException ex){
+            ex.printStackTrace();
+            Utilidades.mostrarAlertaSimple("ERROR", "No se pudo cerrar la sesion", Alert.AlertType.ERROR);
+        }
         
     }
     
