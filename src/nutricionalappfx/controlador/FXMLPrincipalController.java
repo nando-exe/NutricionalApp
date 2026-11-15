@@ -67,6 +67,7 @@ public class FXMLPrincipalController implements Initializable {
             Scene escena = new Scene(vista);
             Stage escenario = (Stage) lblNombre.getScene().getWindow();
             escenario.setScene(escena);
+            escenario.sizeToScene();
             escenario.setTitle("Administracion de pacientes");
             escenario.show();
         }catch(IOException ex){
