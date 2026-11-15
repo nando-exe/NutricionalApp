@@ -6,6 +6,11 @@
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/controlador/FXMLAutenticacionController.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/controlador/FXMLPrincipalController.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/pojo/Colaborador.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/NutricionalAppFX.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/controlador/FXMLAdminPacienteController.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/vista/FXMLAdminPaciente.fxml</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/vista/FXMLFormularioPaciente.fxml</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/controlador/FXMLFormularioPacienteController.java</file>
         </group>
     </open-files>
 </project-private>
