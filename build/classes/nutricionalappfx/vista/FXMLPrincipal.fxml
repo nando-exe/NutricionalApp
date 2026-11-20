@@ -22,22 +22,22 @@
       </Label>
       <Pane layoutX="30.0" layoutY="23.0" prefHeight="77.0" prefWidth="961.0">
          <children>
-            <Button layoutX="243.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBtnColaboradores" prefHeight="39.0" prefWidth="214.0" text="Admin. Colaboradores">
+            <Button layoutX="103.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBtnColaboradores" prefHeight="39.0" prefWidth="214.0" text="Admin. Colaboradores">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="463.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBtnPacientes" prefHeight="39.0" prefWidth="181.0" text="Admin. Pacientes">
+            <Button layoutX="327.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBtnPacientes" prefHeight="39.0" prefWidth="181.0" text="Admin. Pacientes">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="651.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBtnCitas" prefHeight="39.0" prefWidth="145.0" text="Admin. Citas">
+            <Button layoutX="517.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBtnCitas" prefHeight="39.0" prefWidth="145.0" text="Admin. Citas">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="810.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleBtnConsutas" prefHeight="39.0" prefWidth="124.0" text="Consultas">
+            <Button layoutX="823.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleBtnConsutas" prefHeight="39.0" prefWidth="124.0" text="Consultas">
                <font>
                   <Font size="18.0" />
                </font></Button>
@@ -46,6 +46,11 @@
                   <Image url="@../recurso/icon-salida.png" />
                </image>
             </ImageView>
+            <Button layoutX="670.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBtnDietas" prefHeight="39.0" prefWidth="145.0" text="Admin. Dietas">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

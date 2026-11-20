@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package nutricionalappfx.controlador;
 
 import java.io.IOException;
@@ -63,14 +60,14 @@ public class FXMLPrincipalController implements Initializable {
             NutricionalAppFX.class.getResource("vista/FXMLAdminPaciente.fxml"));
             Parent vista = loader.load();
             FXMLAdminPacienteController controlador = loader.getController();
+            controlador.recibirInformacion(colaborador.getIdColaborador());
             controlador.inicializarInformacion(colaborador);
             
             Scene escena = new Scene(vista);
             Stage escenario = (Stage) lblNombre.getScene().getWindow();
             escenario.setScene(escena);
-            escenario.sizeToScene();
             escenario.setTitle("Administracion de pacientes");
-            escenario.show();
+            escenario.showAndWait();
         }catch(IOException ex){
             ex.printStackTrace();
             Utilidades.mostrarAlertaSimple("ERROR", "No se logro mostrar la pantalla de pacientes", Alert.AlertType.ERROR);
@@ -101,6 +98,10 @@ public class FXMLPrincipalController implements Initializable {
             Utilidades.mostrarAlertaSimple("ERROR", "No se pudo cerrar la sesion", Alert.AlertType.ERROR);
         }
         
+    }
+
+    @FXML
+    private void handleBtnDietas(ActionEvent event) {
     }
     
 }

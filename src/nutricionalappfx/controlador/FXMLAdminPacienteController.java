@@ -36,6 +36,8 @@ public class FXMLAdminPacienteController implements Initializable {
     private TableView<?> tblTablaPacientes;
     @FXML
     private TextField tfBuscar;
+    
+    private int idNutriologo;
 
     /**
      * Initializes the controller class.
@@ -44,6 +46,10 @@ public class FXMLAdminPacienteController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    public void recibirInformacion(int idNutriologo){
+        this.idNutriologo = idNutriologo;
+    }
     
     public void inicializarInformacion(Colaborador colaborador){
         this.colaborador = colaborador;
@@ -77,7 +83,7 @@ public class FXMLAdminPacienteController implements Initializable {
             escenario.showAndWait();
         } catch (IOException ex) {
             ex.printStackTrace();
-            Utilidades.mostrarAlertaSimple("ERROR", "No se pudo abrir el formulari", Alert.AlertType.ERROR);
+            Utilidades.mostrarAlertaSimple("ERROR", "No se pudo abrir el formularioss", Alert.AlertType.ERROR);
         }
     }
 
@@ -93,7 +99,7 @@ public class FXMLAdminPacienteController implements Initializable {
             Scene escena = new Scene(vista);
             Stage escenario = (Stage) tfBuscar.getScene().getWindow();
             escenario.setScene(escena);
-            escenario.setTitle("");
+            escenario.setTitle("Control nutricional");
             escenario.show();
         }catch(IOException ex){
             ex.printStackTrace();
