@@ -14,13 +14,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import nutricionalappfx.NutricionalAppFX;
 import nutricionalappfx.dominio.pojo.Colaborador;
+import nutricionalappfx.dominio.pojo.Paciente;
 import nutricionalappfx.utilidad.Utilidades;
 
 /**
@@ -31,21 +34,43 @@ import nutricionalappfx.utilidad.Utilidades;
 public class FXMLAdminPacienteController implements Initializable {
     
     private Colaborador colaborador;
-
+    private int idNutriologo;
     @FXML
-    private TableView<?> tblTablaPacientes;
+    private TableView<Paciente> tblTablaPacientes;
     @FXML
     private TextField tfBuscar;
     
-    private int idNutriologo;
+   
+    @FXML
+    private TableColumn colCodigo;
+    @FXML
+    private TableColumn colNombre;
+    @FXML
+    private TableColumn colPaterno;
+    @FXML
+    private TableColumn colMaterno;
+    @FXML
+    private TableColumn colNacimiento;
+    @FXML
+    private TableColumn colPeso;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        configurarColumnasTabla();
+        //tblTablaPacientes.setItems();
     }    
+    
+    private void configurarColumnasTabla(){
+        colCodigo.setCellValueFactory(new PropertyValueFactory("codigo"));
+        colNombre.setCellValueFactory(new PropertyValueFactory("nombre"));
+        colPaterno.setCellValueFactory(new PropertyValueFactory("apellidoPaterno"));
+        colMaterno.setCellValueFactory(new PropertyValueFactory("apellidoMaterno"));
+        colNacimiento.setCellValueFactory(new PropertyValueFactory("fechaNacimiento"));
+        colPeso.setCellValueFactory(new PropertyValueFactory("pesoInicial"));
+    }
     
     public void recibirInformacion(int idNutriologo){
         this.idNutriologo = idNutriologo;

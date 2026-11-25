@@ -11,6 +11,7 @@ package nutricionalappfx.dominio.pojo;
 public class Paciente {
     private int idPaciente;
     private String codigo;
+    private String nombre;
     private String apellidoPaterno;
     private String apellidoMaterno;
     private String fechaNacimiento;
@@ -24,9 +25,10 @@ public class Paciente {
     public Paciente() {
     }
 
-    public Paciente(int idPaciente, String codigo, String apellidoPaterno, String apellidoMaterno, String fechaNacimiento, int altura, float pesoInicial, char sexo, String telefono, String correo, int idNutriologo) {
+    public Paciente(int idPaciente, String codigo, String nombre, String apellidoPaterno, String apellidoMaterno, String fechaNacimiento, int altura, float pesoInicial, char sexo, String telefono, String correo, int idNutriologo) {
         this.idPaciente = idPaciente;
         this.codigo = codigo;
+        this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
         this.fechaNacimiento = fechaNacimiento;
@@ -52,6 +54,14 @@ public class Paciente {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellidoPaterno() {
@@ -125,6 +135,7 @@ public class Paciente {
     public void setIdNutriologo(int idNutriologo) {
         this.idNutriologo = idNutriologo;
     }
+
     
     
 }

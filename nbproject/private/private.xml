@@ -17,14 +17,13 @@
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/pojo/Colaborador.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/pojo/ColaboradorEstatus.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/modelo/dao/AutenticacionDAO.java</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/modelo/database.properties</file>
-            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/AutenticacionDM.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/modelo/dao/PacienteDAO.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/pojo/Paciente.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/contrato/IPacienteRepository.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/PacienteDM.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/pojo/OperacionResultado.java</file>
             <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/modelo/ConexionBD.java</file>
+            <file>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/NutricionalAppFX/src/nutricionalappfx/dominio/AutenticacionDM.java</file>
         </group>
     </open-files>
 </project-private>
